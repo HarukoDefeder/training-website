@@ -18,4 +18,8 @@ const getEnvValue = (key: string, defaultValue: string): string => {
 // Експортуємо змінні середовища з типізацією та значеннями за замовчуванням
 export const NODE_ENV: string = getEnvValue('NODE_ENV', 'development');
 export const PORT: number = parseInt(getEnvValue('PORT', '5000'), 10);
-export const MONGODB_URI: string = getEnvValue('MONGODB_URI', 'mongodb://localhost:27017/rabbits');
+// eslint-disable-next-line prettier/prettier
+export const MONGODB_URI: string = getEnvValue(
+    'MONGODB_URI',
+    'mongodb://localhost:27017/hippopotamuss',
+);
